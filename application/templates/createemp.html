@@ -1,0 +1,102 @@
+{% extends "adminlayout.html" %}
+   
+{% block content %}
+<div id="forms">
+    <div class="container">
+         <form name="login" action="" method="post" novalidate>
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>
+                <h3 class="register-heading" align="center">Employee Registration</h3>
+                <hr><br>
+                    <div class="row register-form">
+                        <div class="col-md-6">    
+                        {{ form.hidden_tag() }}
+                        <div class="form-group">
+                            <label align="left">{{ form.firstname.label }}</label>
+                            {{ form.firstname }}
+                            {% for error in form.firstname.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %} 
+                        </div> 
+                        <div class="form-group">
+                            <label align="left">{{ form.lastname.label }}</label>
+                            {{ form.lastname }}
+                            {% for error in form.lastname.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            <label align="left">{{ form.age.label }}</label>
+                            {{ form.age }}
+                            {% for error in form.age.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            <label align="left">{{ form.gender.label }}</label>
+                            {{ form.gender }}
+                            {% for error in form.gender.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            <label align="left">{{ form.address.label }}</label>
+                            {{ form.address }}
+                            {% for error in form.address.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        </div>
+                        <div class="col-md-4">
+                        <div class="form-group">
+                            <label align="left">{{ form.email.label }}</label>
+                            {{ form.email }}
+                            {% for error in form.email.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            <label align="left">{{ form.designation.label }}</label>
+                            {{ form.designation }}<br>
+                            {% for error in form.designation.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        <div class="form-group">
+                            <label align="left">{{ form.department.label }}</label>
+                            {{ form.department }}
+                            {% for error in form.department.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            <label align="left">{{ form.basic.label }}</label>
+                            {{ form.basic }}
+                            {% for error in form.basic.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            <label align="left">{{ form.pf.label }}</label>
+                            {{ form.pf }}
+                            {% for error in form.pf.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="form-group">
+                            <label align="left">{{ form.mf.label }}</label>
+                            {{ form.mf }}
+                            {% for error in form.mf.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                        </div>
+                        <label>
+                            {{ form.submit() }}
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div> 
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "emplayout.html" %}
+   
+{% block content %}
+
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+      <tr align="center">
+        <th class="th-sm">Month</th>
+        <th class="th-sm">Date</th>
+        <th class="th-sm">Event</th>
+      </tr>
+    </thead>
+    <tbody align="center">
+    {% for row in rows %}
+      <tr>
+        <td>{{row.month}}</td>
+        <td>{{row.edate}}</td>
+        <td>{{row.event}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

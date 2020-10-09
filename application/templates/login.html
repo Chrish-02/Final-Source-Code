@@ -1,0 +1,36 @@
+<head>
+    <link href="static/css/register.css" rel="stylesheet">
+</head>
+<body>
+<div id="forms">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form name="login" action="" method="post" novalidate>
+                <fieldset class="form-group">
+                    <legend>Staff and Human Resource Manager login</legend> 
+                    {{ form.hidden_tag() }}
+
+                    <p>
+                        {{ form.username.label }}<br>
+                        {{ form.username(size=35) }}
+                        {% for error in form.username.errors %}
+                            <span class="error-message">{{ error }}</span>
+                        {% endfor %}
+                    </p>
+                    <p>
+                        {{ form.password.label }}<br>
+                        {{ form.password(size=15) }}
+                        {% for error in form.password.errors %}
+                            <span class="error-message">{{ error }}</span>
+                        {% endfor %}
+                    </p>
+
+                    <p>
+                        {{ form.submit() }}
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    </div>
+    </body>

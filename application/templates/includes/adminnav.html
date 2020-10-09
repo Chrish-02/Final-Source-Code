@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>www.beyondteaching.com</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/images/favicon.png" rel="icon">
+  <link href="static/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/vendor/owl.carousel/static/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <a href="www.beyondteaching.com">www.beyondteaching.com</a>
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar-->
+
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h3><a href="index.html">Beyond<span>teaching</span></a></h3>
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+            <li class="menu-active"><a href="">Home</a></li>
+            <li><a href="{{url_for ('manageleave')}}">Manage Leave</a></li>
+            <li class="menu-has-children"><a href="">My Dashboard</a>
+            <ul>
+              <li><a href="{{url_for ('empdetails')}}">Employee Details</a></li>
+              <li><a href="{{url_for ('createemp')}}">Add Employee Details</a></li>
+            </ul>
+            <li><a href="{{url_for ('salaryform')}}">Manage Payroll</a></li>
+            <li class="menu-has-children"><a href="">Manage Holidays</a>
+              <ul>
+                <li><a href="{{url_for ('holidaylistadmin')}}">Check Holiday List</a></li>
+                <li><a href="{{url_for ('holidayentry')}}">Add Holidays</a></li>
+              </ul>
+            <li><a href="{{url_for ('logout')}}">Logout</li>
+            </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="static/vendor/php-email-form/validate.js"></script>
+<script src="static/vendor/wow/wow.min.js"></script>
+<script src="static/vendor/venobox/venobox.min.js"></script>
+<script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="static/vendor/jquery-sticky/jquery.sticky.js"></script>
+<script src="static/vendor/superfish/superfish.min.js"></script>
+<script src="static/vendor/hoverIntent/hoverIntent.js"></script>
+<script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/js/main.js"></script>

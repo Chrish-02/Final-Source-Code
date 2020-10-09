@@ -1,0 +1,30 @@
+{% extends "adminlayout.html" %}
+   
+{% block content %}
+
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th class="th-sm">First Name</th>
+        <th class="th-sm">Last Name</th>
+        <th class="th-sm">Designation</th>
+        <th class="th-sm">Department</th>
+        <th class="th-sm">Edit</th>
+        <th class="th-sm">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for row in rows %}
+      <tr>
+        <td>{{row.firstname}}</td>
+        <td>{{row.lastname}}</td>
+        <td>{{row.designation}}</td>
+        <td>{{row.department}}</td>
+        <td><a href="{{ url_for('updateemp', id=row.id) }}">Edit</td>
+        <td><a href="{{ url_for('deleteemp', id=row.id) }}">Delete</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+      

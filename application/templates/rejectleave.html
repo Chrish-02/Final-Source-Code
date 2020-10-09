@@ -1,0 +1,23 @@
+{% extends "emplayout.html" %}
+{% block content %}
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+      <tr align="center">
+        <th class="th-sm">Employee Details</th>
+        <th class="th-sm">Result</th>
+      </tr>
+    </thead>
+    <tbody align="center">
+    {% for row in rows %}
+      <tr>
+        <td>{{row.firstname}}<br>
+        {{row.lastname}}<br>
+        {{row.startdate}}<br>
+        {{row.enddate}}<br>
+        {{row.cause}}</td>
+        <td>Rejected</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

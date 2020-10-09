@@ -1,0 +1,34 @@
+{% extends "adminlayout.html" %}
+   
+{% block content %}
+
+<table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+      <tr align="center">
+        <th class="th-sm">First Name</th>
+        <th class="th-sm">Last Name</th>
+        <th class="th-sm">Start Date</th>
+        <th class="th-sm">End Date</th>
+        <th class="th-sm">Cause of Leave</th>
+        <th class="th-sm">Result</th>
+      </tr>
+    </thead>
+    <tbody align="center">
+    {% for row in rows %}
+      <tr>
+        <td>{{row.firstname}}</td>
+        <td>{{row.lastname}}</td>
+        <td>{{row.startdate}}</td>
+        <td>{{row.enddate}}</td>
+        <td>{{row.cause}}</td>
+        {% if row.status == 'Pending' %}
+          <td><a href="{{ url_for('approveleave', id=row.id) }}"><button type="button" class="btn btn-outline-success">Approve</button></a></td>
+          <td><a href="{{ url_for('rejectleave', id=row.id) }}" ><button type="button" class="btn btn-outline-danger" >Reject</button></a></td>
+        {% else %}
+          <td>{{row.status}}</td>
+        {% endif %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

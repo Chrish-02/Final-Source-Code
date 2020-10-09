@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>www.beyondteaching.com</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/images/favicon.png" rel="icon">
+  <link href="static/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/vendor/owl.carousel/static/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <a href="www.beyondteaching.com">www.beyondteaching.com</a>
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar-->
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h3><a href="index.html">Beyond<span>Teaching</span></a></h3>
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="https://www.beyondteaching.com/aboutus">About us</a></li>
+          <li><a href="https://www.beyondteaching.com/trending-news">Trending</a></li>
+          <li><a href="https://www.beyondteaching.com/blog">Blog</a></li>
+          <li><a href="https://www.beyondteaching.com/login">Network</a></li>
+          <li><a href="https://www.beyondteaching.com/privacy-policy">Privacy Policy</a></li>
+          <li><a href="https://www.beyondteaching.com/terms-and-conditions">Terms & Conditions</a></li>
+          <li><a href="https://www.beyondteaching.com/news">Newsletter</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Intro Section ======= -->
+  <section id="intro">
+
+    <div class="intro-content">
+      <h2>Teaching <span>Beyond the</span><br>Conventional Horizon</h2>
+      <h3>Are you an employee?</h3>
+      <div>
+        <a class="oauth-container btn darken-4 white black-text" class="btn-get-started scrollto" href="{{ url_for('oauth_authorize', provider='google') }}" style="text-transform:none">
+          <div class="left">
+              <img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in" 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+          </div>
+          Login with Google
+      </a>
+  </div>
+      </div>
+    </div>
+
+  </section><!-- End Intro Section -->
+
+  
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 text-center text-lg-left">
+            <h3 class="cta-title"><span>Are you a staff?</span></h3>
+            <p class="cta-text">Please create your own account with your staff id and password.</p>
+          </div>
+          <div class="col-lg-4 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="{{url_for('register') }}">sign up</a>
+            <a class="cta-btn align-middle" href="{{url_for('login') }}">login</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+   
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright"><strong>Beyond Teaching</strong>
+        &copy;2018 All Rights Reserved.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+</body>
+
+</html>
