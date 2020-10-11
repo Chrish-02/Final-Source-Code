@@ -5,41 +5,41 @@
     <div class="container">
          <form name="login" action="" method="post" novalidate>
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>
-                <h3 class="register-heading" align="center">Employee Registration</h3>
+                <h1 class="register-heading" align="center">Employee Registration</h1>
                 <hr><br>
                     <div class="row register-form">
                         <div class="col-md-6">    
                         {{ form.hidden_tag() }}
                         <div class="form-group">
-                            <label align="left">{{ form.firstname.label }}</label>
+                            <label align="left"><h4>{{ form.firstname.label }}</h4></label>
                             {{ form.firstname }}
                             {% for error in form.firstname.errors %}
                                 <span class="error-message">{{ error }}</span>
                             {% endfor %} 
                         </div> 
                         <div class="form-group">
-                            <label align="left">{{ form.lastname.label }}</label>
+                            <label align="left"><h4>{{ form.lastname.label }}</h4></label>
                             {{ form.lastname }}
                             {% for error in form.lastname.errors %}
                                 <span class="error-message">{{ error }}</span>
                             {% endfor %}
                         </div>
                         <div class="form-group">
-                            <label align="left">{{ form.age.label }}</label>
+                            <label align="left"><h4>{{ form.age.label }}</h4></label>
                             {{ form.age }}
                             {% for error in form.age.errors %}
                                 <span class="error-message">{{ error }}</span>
                             {% endfor %}
                         </div>
                         <div class="form-group">
-                            <label align="left">{{ form.gender.label }}</label>
+                            <label align="left"><h4>{{ form.gender.label }}</h4></label>
                             {{ form.gender }}
                             {% for error in form.gender.errors %}
                                 <span class="error-message">{{ error }}</span>
                             {% endfor %}
                         </div>
                         <div class="form-group">
-                            <label align="left">{{ form.address.label }}</label>
+                            <label align="left"><h4>{{ form.address.label }}</h4></label>
                             {{ form.address }}
                             {% for error in form.address.errors %}
                                 <span class="error-message">{{ error }}</span>
@@ -48,41 +48,41 @@
                         </div>
                         <div class="col-md-4">
                         <div class="form-group">
-                            <label align="left">{{ form.email.label }}</label>
+                            <label align="left"><h4>{{ form.email.label }}</h4></label>
                             {{ form.email }}
                             {% for error in form.email.errors %}
                                 <span class="error-message">{{ error }}</span>
                             {% endfor %}
                         </div>
                         <div class="form-group">
-                            <label align="left">{{ form.designation.label }}</label>
+                            <label align="left"><h4>{{ form.designation.label }}</h4></label>
                             {{ form.designation }}<br>
                             {% for error in form.designation.errors %}
                                 <span class="error-message">{{ error }}</span>
                             {% endfor %}
                         <div class="form-group">
-                            <label align="left">{{ form.department.label }}</label>
+                            <label align="left"><h4>{{ form.department.label }}</h4></label>
                             {{ form.department }}
                             {% for error in form.department.errors %}
                                 <span class="error-message">{{ error }}</span>
                             {% endfor %}
                         </div>
                         <div class="form-group">
-                            <label align="left">{{ form.basic.label }}</label>
+                            <label align="left"><h4>{{ form.basic.label }}</h4></label>
                             {{ form.basic }}
                             {% for error in form.basic.errors %}
                                 <span class="error-message">{{ error }}</span>
                             {% endfor %}
                         </div>
                         <div class="form-group">
-                            <label align="left">{{ form.pf.label }}</label>
+                            <label align="left"><h4>{{ form.pf.label }}</h4></label>
                             {{ form.pf }}
                             {% for error in form.pf.errors %}
                                 <span class="error-message">{{ error }}</span>
                             {% endfor %}
                         </div>
                         <div class="form-group">
-                            <label align="left">{{ form.mf.label }}</label>
+                            <label align="left"><h4>{{ form.mf.label }}</h4></label>
                             {{ form.mf }}
                             {% for error in form.mf.errors %}
                                 <span class="error-message">{{ error }}</span>
@@ -90,7 +90,7 @@
                         </div>
                         </div>
                         <label>
-                            {{ form.submit() }}
+                            <h1>{{ form.submit() }}</h1>
                         </label>
                     </div>
                 </div>
