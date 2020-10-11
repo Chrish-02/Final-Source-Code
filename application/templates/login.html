@@ -1,36 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>Staff and Human Resource Manager Login</title>
 <head>
     <link href="static/css/register.css" rel="stylesheet">
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+
+
+<style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
 <body>
-<div id="forms">
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <form name="login" action="" method="post" novalidate>
-                <fieldset class="form-group">
-                    <legend>Staff and Human Resource Manager Login</legend> 
-                    {{ form.hidden_tag() }}
+ 
 
-                    <p>
-                        {{ form.username.label }}<br>
-                        {{ form.username(size=35) }}
-                        {% for error in form.username.errors %}
-                            <span class="error-message">{{ error }}</span>
-                        {% endfor %}
-                    </p>
-                    <p>
-                        {{ form.password.label }}<br>
-                        {{ form.password(size=15) }}
-                        {% for error in form.password.errors %}
-                            <span class="error-message">{{ error }}</span>
-                        {% endfor %}
-                    </p>
+<div class="w3-main" style="margin-left:250px;">
 
-                    <p>
-                        {{ form.submit() }}
-                    </p>
-                </fieldset>
-            </form>
+<header class="w3-container w3-theme" style="padding:64px 32px" align="center">
+  <h1 class="w3-xxxlarge">Staff and Human Resource Manager Login</h1>
+</header>
+
+</div> 
+
+    <div id="forms">
+        <div class="row", align="center">
+            <div class="col-md-6 offset-md-3">
+                <form name="login" action="" method="post" novalidate>
+                    <fieldset class="form-group">
+                         
+                        {{ form.hidden_tag() }}
+    
+                        <p><h3>
+                            {{ form.username.label }}</h3><br>
+                            {{ form.username(size=50) }}
+                            {% for error in form.username.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </p> <br> 
+                        <p><h3>
+                            {{ form.password.label }}</h3><br>
+                            {{ form.password(size=30) }}
+                            {% for error in form.password.errors %}
+                                <span class="error-message">{{ error }}</span>
+                            {% endfor %}
+                        </p>
+    <br><br> 
+                        <p><h4>
+                            {{ form.submit() }}
+                        </h4></p>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-    </div>
-    </div>
-    </body>
+        </div>
+
+
+
+</div>
+
+
+     
+
+</body>
+</html> 
