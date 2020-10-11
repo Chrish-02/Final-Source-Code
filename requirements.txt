@@ -47,14 +47,4 @@ WTForms==2.3.3
 
 
 
-web app:
-Client ID
-551543222360-b440lrckpei7ml10ffu2f0het2u45to5.apps.googleusercontent.com
-Client secret
-Y6M-dLGUafpifGRkU2--wsTs
-
-admin password:
-Chrish98373
-
-python -m flask run
 
