@@ -1,0 +1,7 @@
+How to use the code: type the following commands.
+cd viro
+cd Scripts
+activate
+cd..
+cd..
+python -m flask run
